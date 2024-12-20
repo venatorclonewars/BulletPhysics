@@ -1,0 +1,12 @@
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Ground\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.MdMergeInputs.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Ground\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_plat.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Ground\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_comp.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\TerrainCPP\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.MdMergeInputs.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\TerrainCPP\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_plat.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\TerrainCPP\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_comp.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\PhysicsEngine\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.MdMergeInputs.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\PhysicsEngine\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_plat.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\PhysicsEngine\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_comp.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.MdMergeInputs.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_plat.cache
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\Battlefr.a0426d0c\x64\Debug\BattlefrontRemake.vcxproj.cppwinrt_comp.cache
