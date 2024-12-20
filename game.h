@@ -11,6 +11,7 @@ public:
 	void run();
 	static void renderScene();
 
+	void initializeBulletPhysics();
 	// Terrain stuff
 	void initTerrainTextureGenerator();
 

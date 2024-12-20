@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstring>
 #include <algorithm>    // For std::max and std::min
+#include "BulletPhysics/src/btBulletDynamicsCommon.h"
 
 using namespace std;
 
@@ -333,6 +334,41 @@ public:
 		mat[3][0] = 0.0f;	  mat[3][1] = 0.0f;     mat[3][2] = 0.0f;     mat[3][3] = 1.0f;
 		
 	}
+
+	void setRotationFromQuaternion(const btQuaternion& quat)
+	{
+		
+		btMatrix3x3 rotMatrix = btMatrix3x3(quat);
+
+		// Fill the 3x3 rotation part of the 4x4 matrix
+		mat[0][0] = rotMatrix[0][0];
+		mat[0][1] = rotMatrix[0][1];
+		mat[0][2] = rotMatrix[0][2];
+
+		mat[1][0] = rotMatrix[1][0];
+		mat[1][1] = rotMatrix[1][1];
+		mat[1][2] = rotMatrix[1][2];
+
+		mat[2][0] = rotMatrix[2][0];
+		mat[2][1] = rotMatrix[2][1];
+		mat[2][2] = rotMatrix[2][2];
+
+		mat[3][3] = 1.0f; // Homogeneous coordinate
+
+		// The translation part (position) will be set separately.
+	}
+
+	void setTranslation(const btVector3& position)
+	{
+		mat[0][3] = position.x();
+		mat[1][3] = position.y();
+		mat[2][3] = position.z();
+		mat[3][3] = 1.0f;
+	}
+
+
+
+
 
 	Matrix4f(const Matrix4f& matrix) 
 	{

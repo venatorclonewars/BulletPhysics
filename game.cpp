@@ -41,6 +41,14 @@ MidpointDispTerrain m_terrain;
 Camera camera;
 Time* pTime = new Time();
 
+
+btBroadphaseInterface* broadphase;
+btDefaultCollisionConfiguration* collisionConfiguration;
+btCollisionDispatcher* dispatcher;
+btSequentialImpulseConstraintSolver* solver;
+btDiscreteDynamicsWorld* dynamicsWorld;
+btRigidBody* fallRigidBody;
+
 vector<Cube*> m_objects;
 vector<Vector3f> m_velocities =
 {
@@ -128,13 +136,7 @@ Game::Game()
 
     camera.setWeightColorDebug(pSkinnedMesh, pLightingTech);
 
-    
-    btDefaultCollisionConfiguration collisionConfig;
-    btCollisionDispatcher dispatcher(&collisionConfig);
-    btDbvtBroadphase broadphase;
-    btSequentialImpulseConstraintSolver solver;
-    btDiscreteDynamicsWorld dynamicsWorld(&dispatcher, &broadphase, &solver, &collisionConfig);
-
+    initializeBulletPhysics();
 }
 
 void Game::run()
@@ -145,6 +147,50 @@ void Game::run()
     glutCallbacks();
 
     glutMainLoop();
+}
+
+void Game::initializeBulletPhysics()
+{
+    // Create the broadphase
+    broadphase = new btDbvtBroadphase();
+
+    // Create the collision configuration and dispatcher
+    collisionConfiguration = new btDefaultCollisionConfiguration();
+    dispatcher = new btCollisionDispatcher(collisionConfiguration);
+
+    // Create the solver
+    solver = new btSequentialImpulseConstraintSolver();
+
+    // Create the dynamics world
+    dynamicsWorld = new btDiscreteDynamicsWorld(dispatcher, broadphase, solver, collisionConfiguration);
+
+    // Set gravity (falling downward)
+    dynamicsWorld->setGravity(btVector3(0, -5, 0));
+
+
+    btCollisionShape* groundShape = new btStaticPlaneShape(btVector3(0, 1, 0), 1);  // Ground is at y=1 with a normal vector (0, 1, 0)
+    btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
+    btRigidBody::btRigidBodyConstructionInfo groundRigidBodyCI(0, groundMotionState, groundShape, btVector3(0, 0, 0));
+    btRigidBody* groundRigidBody = new btRigidBody(groundRigidBodyCI);
+    dynamicsWorld->addRigidBody(groundRigidBody);
+
+
+    btCollisionShape* fallShape = new btBoxShape(btVector3(0.5, 0.5, 0.5));  // Cube of size 2x2x2
+    btDefaultMotionState* fallMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, 10, 0)));  // Initial position (0, 10, 0)
+    btScalar mass = 1.0f;
+
+    btVector3 fallInertia(0, 0, 0);
+    fallShape->calculateLocalInertia(mass, fallInertia);
+
+    btRigidBody::btRigidBodyConstructionInfo fallRigidBodyCI(mass, fallMotionState, fallShape, fallInertia);
+    fallRigidBody = new btRigidBody(fallRigidBodyCI);
+    dynamicsWorld->addRigidBody(fallRigidBody);
+
+
+    for (int i = 0; i < numOfObjects; i++)
+    {
+        m_objects.push_back(new Cube(m_positions[i]));
+    }
 }
 
 void Game::renderScene()
@@ -242,8 +288,36 @@ void Game::renderScene()
     }
 
     //pSkinnedMesh->render();
+    dynamicsWorld->stepSimulation(1.0f / 60.f, 10);
 
     WVP = projection * view;
+
+    Matrix4f objectWVP;
+
+    btTransform worldTransform;
+    Matrix4f objectTransform;
+    
+    fallRigidBody->getMotionState()->getWorldTransform(worldTransform);
+
+    objectTransform.setTranslation(worldTransform.getOrigin());  // Set the translation part (position)
+    objectTransform.setRotationFromQuaternion(worldTransform.getRotation());  // Set the rotation part from quaternion
+
+
+    for (int i = 0; i < numOfObjects; i++)
+    {
+        //objectWVP = WVP * m_objects[i]->getTransform();
+        if (i == 0)
+        {
+            objectWVP = WVP * objectTransform;
+            m_objects[i]->render(objectWVP);
+        }
+            
+
+        else
+            objectWVP = WVP;
+       
+    }
+
 
     glutSwapBuffers();
 

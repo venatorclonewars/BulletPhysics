@@ -4,22 +4,22 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(1
       C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\Include\GLFW\glfw3.h(123,11):
       see previous definition of 'APIENTRY'
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(416,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(430,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(543,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(544,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(545,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(546,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(32,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
@@ -66,6 +66,6 @@ C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(40,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'game.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(455,1): warning C4172: returning address of local variable or temporary : out
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(608,1): warning C4172: returning address of local variable or temporary : out
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(491,1): warning C4172: returning address of local variable or temporary : out
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(644,1): warning C4172: returning address of local variable or temporary : out
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\x64\Debug\BattlefrontRemake.exe
