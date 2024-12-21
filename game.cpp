@@ -1,6 +1,11 @@
 #include <GL/glew.h>          // GLEW must come before OpenGL-related headers
 #include <GLFW/glfw3.h>       // GLFW headers for windowing and input
+#define BULLET_ENABLE_DEBUG_DRAW
+#include "BulletPhysics/src/LinearMath/btIDebugDraw.h"
 #include "BulletPhysics/src/btBulletDynamicsCommon.h"
+#include "BulletPhysics/src/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h"
+#include "BulletPhysics/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
+
 #include "game.h"
 #include <stdio.h>
 #include <string>
@@ -53,8 +58,8 @@ vector<Cube*> m_objects;
 
 vector<Vector3f> m_positions
 {
-    Vector3f(5.0f, 10.0f, 5.0f),
-    Vector3f(5.0f, 20.0f, 5.0f)
+    Vector3f(25.0f, 20.0f, 25.0f),
+    Vector3f(25.0f, 30.0f, 25.0f)
 };
 
 int numOfObjects = 2;
@@ -112,6 +117,7 @@ Game::Game()
 
     //pLightingTech->setTextureUnit(COLOR_TEXTURE_UNIT_INDEX_0);
     //pLightingTech->setSpecularExpTextureUnit(SPECULAR_EXPONENT_UNIT_INDEX_0);
+    initializeBulletPhysics();
     initTerrainTextureGenerator();
 
     glEnable(GL_CULL_FACE);
@@ -131,8 +137,6 @@ Game::Game()
     dirLight.worldDirection = Vector3f(10.0f, 0.0f, 5.0f);
 
     camera.setWeightColorDebug(pSkinnedMesh, pLightingTech);
-
-    initializeBulletPhysics();
 }
 
 void Game::run()
@@ -147,28 +151,25 @@ void Game::run()
 
 void Game::initializeBulletPhysics()
 {
-    // Create the broadphase
     broadphase = new btDbvtBroadphase();
 
     // Create the collision configuration and dispatcher
     collisionConfiguration = new btDefaultCollisionConfiguration();
     dispatcher = new btCollisionDispatcher(collisionConfiguration);
 
-    // Create the solver
     solver = new btSequentialImpulseConstraintSolver();
 
-    // Create the dynamics world
     dynamicsWorld = new btDiscreteDynamicsWorld(dispatcher, broadphase, solver, collisionConfiguration);
 
     // Set gravity (falling downward)
     dynamicsWorld->setGravity(btVector3(0, -5, 0));
 
 
-    btCollisionShape* groundShape = new btStaticPlaneShape(btVector3(0, 1, 0), 1);  // Ground is at y=1 with a normal vector (0, 1, 0)
-    btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
-    btRigidBody::btRigidBodyConstructionInfo groundRigidBodyCI(0, groundMotionState, groundShape, btVector3(0, 0, 0));
-    btRigidBody* groundRigidBody = new btRigidBody(groundRigidBodyCI);
-    dynamicsWorld->addRigidBody(groundRigidBody);
+    //btCollisionShape* groundShape = new btStaticPlaneShape(btVector3(0, 1, 0), 1);  // Ground is at y=1 with a normal vector (0, 1, 0)
+    //btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
+    //btRigidBody::btRigidBodyConstructionInfo groundRigidBodyCI(0, groundMotionState, groundShape, btVector3(0, 0, 0));
+    //btRigidBody* groundRigidBody = new btRigidBody(groundRigidBodyCI);
+    //dynamicsWorld->addRigidBody(groundRigidBody);
 
     for (int i = 0; i < numOfObjects; i++)
     {
@@ -271,7 +272,11 @@ void Game::renderScene()
     }
 
     //pSkinnedMesh->render();
+
     dynamicsWorld->stepSimulation(1.0f / 60.f, 10);
+    /*dynamicsWorld->setDebugDrawer(new btDefaultDebugDrawer());
+    dynamicsWorld->debugDrawWorld();*/
+
 
     WVP = projection * view;
 
@@ -283,6 +288,7 @@ void Game::renderScene()
         m_objects[i]->update(objectWVP);  
     }
 
+    m_terrain.render(projection, viewNonInverse, _view, dirLight, camera.transformPos);
 
     glutSwapBuffers();
 
@@ -326,13 +332,13 @@ void Game::initTerrainTextureGenerator()
 
     m_terrain.initTerrain(worldScale, textureScale);
 
-    int size = 105;
+    int size = 17;
     float roughness = 1.0f;
     float minHeight = 0.0f;
-    float maxHeight = 50.0f;
+    float maxHeight = 10.0f;
 
 
-    m_terrain.createMidpointDisplacement(size, roughness, minHeight, maxHeight, dirLight);
+    m_terrain.createMidpointDisplacement(size, roughness, minHeight, maxHeight, dirLight, dynamicsWorld);
 
     TextureGenerator texGen;
 

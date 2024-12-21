@@ -45,7 +45,7 @@ class Cube
 {
 public:
 	Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld);
-    void createRigidBody(btDiscreteDynamicsWorld* dynamicsWorld);
+    void createRigidBody();
 
 
     void updateRigidBody();
@@ -75,5 +75,7 @@ private:
 
     btRigidBody* m_rigidBody;
     Matrix4f m_objectTransform;
+
+    btDiscreteDynamicsWorld* m_dynamicsWorld;
 };
 

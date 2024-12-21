@@ -16,7 +16,7 @@ void FaultFormationTerrain::createFaultFormation(int terrainSize, int iterations
 
 	m_heightMap.normalize(minHeight, maxHeight);
 
-	m_geomipGrid.createGeomipGrid(m_terrainSize, m_terrainSize, 2, this);
+	//m_geomipGrid.createGeomipGrid(m_terrainSize, m_terrainSize, 2, this);
 }
 
 

@@ -8,7 +8,7 @@ GeomipGrid::GeomipGrid()
 {
 }
 
-void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const BaseTerrain* pTerrain)
+void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const BaseTerrain* pTerrain, btDiscreteDynamicsWorld* dynamicsWorld)
 {
 	if ((width - 1) % (patchSize - 1) != 0) {
 		int RecommendedWidth = ((width - 1 + patchSize - 1) / (patchSize - 1)) * (patchSize - 1) + 1;
@@ -39,7 +39,9 @@ void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const Bas
 	m_patchSize = patchSize;
 	m_pTerrain = pTerrain;
 	m_worldScale = pTerrain->getWorldScale();
-	
+	m_dynamicsWorld = dynamicsWorld;
+	m_convexShape = new btConvexHullShape();
+
 	m_numPatchesX = (width - 1) / (patchSize - 1);
 	m_numPatchesZ = (depth - 1) / (patchSize - 1);
 
@@ -49,6 +51,8 @@ void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const Bas
 	createGLState();
 
 	populateBuffers(pTerrain);
+
+	createRigidBody();
 
 	glBindVertexArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -176,6 +180,41 @@ void GeomipGrid::render(const Vector3f& cameraPos, Matrix4f& projection, Matrix4
 	glBindVertexArray(0);
 }
 
+void GeomipGrid::update(const Vector3f& cameraPos, Matrix4f& projection, Matrix4f& view, Matrix4f _view)
+{
+	render(cameraPos, projection, view, _view);
+}
+
+void GeomipGrid::createRigidBody()
+{
+
+	m_convexShape->optimizeConvexHull();
+	m_convexShape->initializePolyhedralFeatures();
+
+	// Create a static rigid body with mass = 0
+	btScalar mass = 0.0f;
+	btVector3 inertia(0, 0, 0);
+
+	btTransform startTransform;
+	startTransform.setIdentity();
+	startTransform.setOrigin(btVector3(0, 0, 0)); // Position at the origin
+
+	btDefaultMotionState* motionState = new btDefaultMotionState(startTransform);
+
+	btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, motionState, m_convexShape, inertia);
+	btRigidBody* rigidBody = new btRigidBody(rbInfo);
+
+	// Mark as a static object
+	rigidBody->setCollisionFlags(rigidBody->getCollisionFlags() | btCollisionObject::CF_STATIC_OBJECT);
+
+	// Add the static collider to the world
+	m_dynamicsWorld->addRigidBody(rigidBody);
+}
+
+void GeomipGrid::updateRigidBody()
+{
+}
+
 void GeomipGrid::createGLState()
 {
 	glGenVertexArrays(1, &m_VAO);
@@ -238,8 +277,9 @@ void GeomipGrid::initVertices(const BaseTerrain* pTerrain, vector<Vertex>& verti
 		for (int x = 0; x < m_width; x++)
 		{
 			assert(index < vertices.size());
-			//vertices[index].setVertex(x, pTerrain->getHeight(x, z), z);
+			
 			vertices[index].setVertex(pTerrain, x, z);
+			m_convexShape->addPoint(btVector3(vertices[index].pos.x, vertices[index].pos.y, vertices[index].pos.z));
 			index++;
 		}
 	}

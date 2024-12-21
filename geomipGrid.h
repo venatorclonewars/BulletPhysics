@@ -4,6 +4,7 @@
 #include <vector>
 #include "lodManager.h"
 #include "frustumCulling.h"
+#include "BulletPhysics/src/btBulletDynamicsCommon.h"
 
 // this header is included by baseTerrain.h so we have a forward 
 // declaration for BaseTerrain.
@@ -46,10 +47,14 @@ class GeomipGrid
 public:
 	GeomipGrid();
 
-	void createGeomipGrid(int width, int depth, int patchSize, const BaseTerrain* pTerrain);
+	void createGeomipGrid(int width, int depth, int patchSize, const BaseTerrain* pTerrain, btDiscreteDynamicsWorld* dynamicsWorld);
 	void render();
 	void render(const Vector3f& cameraPos, const Matrix4f& WVP);
 	void render(const Vector3f& cameraPos, Matrix4f& projection, Matrix4f& view, Matrix4f _view);
+
+    void update(const Vector3f& cameraPos, Matrix4f& projection, Matrix4f& view, Matrix4f _view);
+    void createRigidBody();
+    void updateRigidBody();
 
 	void createGLState();
 	void populateBuffers(const BaseTerrain* pTerrain);
@@ -80,6 +85,9 @@ private:
 	GLuint m_VAO;
 	GLuint m_VBO;
 	GLuint m_IBO;
+
+    btDiscreteDynamicsWorld* m_dynamicsWorld;
+    btConvexHullShape* m_convexShape;
 
     float m_worldScale = 1.0f;
     const BaseTerrain* m_pTerrain = NULL;

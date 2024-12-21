@@ -6,6 +6,7 @@ Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* 
     if (!m_technique->init())
         exit(1);
 
+    m_dynamicsWorld = dynamicsWorld;
     transform = position;
     setPosition(position);
 
@@ -36,7 +37,7 @@ Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* 
     m_isRigidBody = isRigidBody;
 
     if (isRigidBody)
-        createRigidBody(dynamicsWorld);
+        createRigidBody();
 
     createGLState();
     populateBuffers();
@@ -46,7 +47,7 @@ Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
-void Cube::createRigidBody(btDiscreteDynamicsWorld* dynamicsWorld)
+void Cube::createRigidBody()
 {
     btCollisionShape* fallShape = new btBoxShape(btVector3(0.5, 0.5, 0.5));  // Cube of size 2x2x2
     btDefaultMotionState* fallMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(transform.x, transform.y, transform.z)));  // Initial position (0, 10, 0)
@@ -57,7 +58,7 @@ void Cube::createRigidBody(btDiscreteDynamicsWorld* dynamicsWorld)
 
     btRigidBody::btRigidBodyConstructionInfo fallRigidBodyCI(mass, fallMotionState, fallShape, fallInertia);
     m_rigidBody = new btRigidBody(fallRigidBodyCI);
-    dynamicsWorld->addRigidBody(m_rigidBody);
+    m_dynamicsWorld->addRigidBody(m_rigidBody);
 }
 
 void Cube::updateRigidBody()

@@ -95,7 +95,7 @@ void BaseTerrain::loadFromFile(const char* fileName)
 {
 	loadHeightMapFromFile(fileName);
 
-	m_geomipGrid.createGeomipGrid(m_terrainSize, m_terrainSize, 3, this);
+	//m_geomipGrid.createGeomipGrid(m_terrainSize, m_terrainSize, 3, this);
 	//m_heightMap.print();
 }
 

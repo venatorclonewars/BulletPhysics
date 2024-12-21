@@ -1,7 +1,7 @@
 #include "midpointDispTerrain.h"
 #include "prerequisites.h"
 
-void MidpointDispTerrain::createMidpointDisplacement(int terrainSize, float roughness, float minHeight, float maxHeight, const DirectionalLight& dirLight)
+void MidpointDispTerrain::createMidpointDisplacement(int terrainSize, float roughness, float minHeight, float maxHeight, const DirectionalLight& dirLight, btDiscreteDynamicsWorld* dynamicsWorld)
 {
     m_terrainSize = terrainSize;
     m_minHeight = minHeight;
@@ -27,7 +27,7 @@ void MidpointDispTerrain::createMidpointDisplacement(int terrainSize, float roug
 
     m_heightMap.normalize(minHeight, maxHeight);
 
-    m_geomipGrid.createGeomipGrid(m_terrainSize, m_terrainSize, 9, this);
+    m_geomipGrid.createGeomipGrid(m_terrainSize, m_terrainSize, 9, this, dynamicsWorld);
 }
 
 void MidpointDispTerrain::createMidpointDisplacementF32(float roughness)

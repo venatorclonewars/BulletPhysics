@@ -1,45 +1,44 @@
-﻿  cube.cpp
+﻿  geomipGrid.cpp
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+  (compiling source file 'geomipGrid.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+  (compiling source file 'geomipGrid.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+  (compiling source file 'geomipGrid.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+  (compiling source file 'geomipGrid.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+  (compiling source file 'geomipGrid.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+  (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(20,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(20,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(20,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(36,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(36,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(36,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(41,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(41,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file '3DObjects/cube.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.cpp(82,48): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(355,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(376,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(378,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(382,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(419,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(420,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(421,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(422,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(423,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\x64\Debug\BattlefrontRemake.exe
