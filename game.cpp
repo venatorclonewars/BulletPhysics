@@ -50,15 +50,11 @@ btDiscreteDynamicsWorld* dynamicsWorld;
 btRigidBody* fallRigidBody;
 
 vector<Cube*> m_objects;
-vector<Vector3f> m_velocities =
-{
-    Vector3f(0.0f, 0.0f, 2.0f),
-    Vector3f(0.0f, 0.0f, -2.0f)
-};
+
 vector<Vector3f> m_positions
 {
-    Vector3f(0.0f, 0.0f, -5.0f),
-    Vector3f(0.0f, 0.0f, 5.0f)
+    Vector3f(5.0f, 10.0f, 5.0f),
+    Vector3f(5.0f, 20.0f, 5.0f)
 };
 
 int numOfObjects = 2;
@@ -174,22 +170,9 @@ void Game::initializeBulletPhysics()
     btRigidBody* groundRigidBody = new btRigidBody(groundRigidBodyCI);
     dynamicsWorld->addRigidBody(groundRigidBody);
 
-
-    btCollisionShape* fallShape = new btBoxShape(btVector3(0.5, 0.5, 0.5));  // Cube of size 2x2x2
-    btDefaultMotionState* fallMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, 10, 0)));  // Initial position (0, 10, 0)
-    btScalar mass = 1.0f;
-
-    btVector3 fallInertia(0, 0, 0);
-    fallShape->calculateLocalInertia(mass, fallInertia);
-
-    btRigidBody::btRigidBodyConstructionInfo fallRigidBodyCI(mass, fallMotionState, fallShape, fallInertia);
-    fallRigidBody = new btRigidBody(fallRigidBodyCI);
-    dynamicsWorld->addRigidBody(fallRigidBody);
-
-
     for (int i = 0; i < numOfObjects; i++)
     {
-        m_objects.push_back(new Cube(m_positions[i]));
+        m_objects.push_back(new Cube(m_positions[i], true, dynamicsWorld));
     }
 }
 
@@ -294,28 +277,10 @@ void Game::renderScene()
 
     Matrix4f objectWVP;
 
-    btTransform worldTransform;
-    Matrix4f objectTransform;
-    
-    fallRigidBody->getMotionState()->getWorldTransform(worldTransform);
-
-    objectTransform.setTranslation(worldTransform.getOrigin());  // Set the translation part (position)
-    objectTransform.setRotationFromQuaternion(worldTransform.getRotation());  // Set the rotation part from quaternion
-
-
     for (int i = 0; i < numOfObjects; i++)
-    {
-        //objectWVP = WVP * m_objects[i]->getTransform();
-        if (i == 0)
-        {
-            objectWVP = WVP * objectTransform;
-            m_objects[i]->render(objectWVP);
-        }
-            
-
-        else
-            objectWVP = WVP;
-       
+    {    
+        objectWVP = WVP * m_objects[i]->getTransform();
+        m_objects[i]->update(objectWVP);  
     }
 
 

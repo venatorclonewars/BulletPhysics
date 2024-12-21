@@ -1,71 +1,45 @@
-﻿  game.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'game.cpp')
-      C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\Include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
+﻿  cube.cpp
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+  (compiling source file '3DObjects/cube.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+  (compiling source file '3DObjects/cube.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+  (compiling source file '3DObjects/cube.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+  (compiling source file '3DObjects/cube.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+  (compiling source file '3DObjects/cube.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(32,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(20,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(32,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(20,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(32,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(20,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(37,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(36,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(37,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(36,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\mesh.h(15,9): warning C4005: 'ASSIMP_LOAD_FLAGS': macro redefinition
-  (compiling source file 'game.cpp')
-      C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.h(14,9):
-      see previous definition of 'ASSIMP_LOAD_FLAGS'
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(36,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(19,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(41,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(19,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.h(41,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '3DObjects/cube.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(19,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(35,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(35,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(35,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(40,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(40,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'game.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(491,1): warning C4172: returning address of local variable or temporary : out
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(644,1): warning C4172: returning address of local variable or temporary : out
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DObjects\cube.cpp(82,48): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\x64\Debug\BattlefrontRemake.exe

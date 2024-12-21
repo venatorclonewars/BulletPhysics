@@ -1,6 +1,6 @@
 #include "cube.h"
 
-Cube::Cube(const Vector3f& position)
+Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld)
 {
     m_technique = new ObjectTechnique();
     if (!m_technique->init())
@@ -33,12 +33,43 @@ Cube::Cube(const Vector3f& position)
         0, 2, 7
     };
 
+    m_isRigidBody = isRigidBody;
+
+    if (isRigidBody)
+        createRigidBody(dynamicsWorld);
+
     createGLState();
     populateBuffers();
 
     glBindVertexArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+}
+
+void Cube::createRigidBody(btDiscreteDynamicsWorld* dynamicsWorld)
+{
+    btCollisionShape* fallShape = new btBoxShape(btVector3(0.5, 0.5, 0.5));  // Cube of size 2x2x2
+    btDefaultMotionState* fallMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(transform.x, transform.y, transform.z)));  // Initial position (0, 10, 0)
+    btScalar mass = 1.0f;
+
+    btVector3 fallInertia(0, 0, 0);
+    fallShape->calculateLocalInertia(mass, fallInertia);
+
+    btRigidBody::btRigidBodyConstructionInfo fallRigidBodyCI(mass, fallMotionState, fallShape, fallInertia);
+    m_rigidBody = new btRigidBody(fallRigidBodyCI);
+    dynamicsWorld->addRigidBody(m_rigidBody);
+}
+
+void Cube::updateRigidBody()
+{
+    btTransform worldTransform;
+    m_objectTransform.setIdentity();
+
+    m_rigidBody->getMotionState()->getWorldTransform(worldTransform);
+
+    m_objectTransform.setTranslation(worldTransform.getOrigin());  // Set the translation part (position)
+    m_objectTransform.setRotationFromQuaternion(worldTransform.getRotation());  // Set the rotation part from quaternion
+
 }
 
 void Cube::render(const Matrix4f& WVP)
@@ -51,6 +82,14 @@ void Cube::render(const Matrix4f& WVP)
     glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT, 0);
 
     glBindVertexArray(0);
+}
+
+void Cube::update(const Matrix4f& WVP)
+{
+    if (m_isRigidBody)
+        updateRigidBody();
+
+    render(WVP);
 }
 
 void Cube::createGLState()
@@ -82,10 +121,11 @@ void Cube::populateBuffers()
 
 Matrix4f& Cube::getTransform()
 {
-    return world;
+
+    return m_objectTransform;
 }
 
 void Cube::setPosition(const Vector3f& position)
 {
-    world.setTranslation(position);
+    m_objectTransform.setTranslation(position);
 }

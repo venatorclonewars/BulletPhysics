@@ -3,6 +3,7 @@
 #include "../objectTechnique.h"
 #include <vector>
 #include <GL/glew.h>
+#include "../BulletPhysics/src/btBulletDynamicsCommon.h"
 
 struct Vert
 {
@@ -43,8 +44,13 @@ public:
 class Cube
 {
 public:
-	Cube(const Vector3f& position);
+	Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld);
+    void createRigidBody(btDiscreteDynamicsWorld* dynamicsWorld);
+
+
+    void updateRigidBody();
 	void render(const Matrix4f& WVP);
+	void update(const Matrix4f& WVP);
 
 	void createGLState();
 	void populateBuffers();
@@ -65,6 +71,9 @@ private:
 
     ObjectTechnique* m_technique;
 
-    
+    bool m_isRigidBody;
+
+    btRigidBody* m_rigidBody;
+    Matrix4f m_objectTransform;
 };
 
