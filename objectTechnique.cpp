@@ -19,6 +19,7 @@ bool ObjectTechnique::init()
 		return false;
 
 	WVPLoc = getUniformLocation("gWVP");
+	lightDirLoc = getUniformLocation("gLightDir");
 
 
 	enable();
@@ -27,4 +28,11 @@ bool ObjectTechnique::init()
 void ObjectTechnique::setWVP(const Matrix4f& WVP)
 {
 	glUniformMatrix4fv(WVPLoc, 1, GL_TRUE, (const GLfloat*)WVP.mat);
+}
+
+void ObjectTechnique::setLightDir(const Vector3f& lightDir)
+{
+	
+	glUniform3f(lightDirLoc, lightDir.x, lightDir.y, lightDir.z);
+	
 }

@@ -3,8 +3,6 @@
 #define BULLET_ENABLE_DEBUG_DRAW
 #include "BulletPhysics/src/LinearMath/btIDebugDraw.h"
 #include "BulletPhysics/src/btBulletDynamicsCommon.h"
-#include "BulletPhysics/src/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h"
-#include "BulletPhysics/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
 
 #include "game.h"
 #include <stdio.h>
@@ -20,6 +18,8 @@
 #include "midPointDispTerrain.h"
 #include "textureGenerator.h"
 #include "3DOBjects/cube.h"
+#include "3DOBjects/plane.h"
+#include "customDebugDrawer.h"
 #include <vector>
 
 
@@ -55,10 +55,11 @@ btDiscreteDynamicsWorld* dynamicsWorld;
 btRigidBody* fallRigidBody;
 
 vector<Cube*> m_objects;
+Plane* plane;
 
 vector<Vector3f> m_positions
 {
-    Vector3f(25.0f, 20.0f, 25.0f),
+    Vector3f(25.0f, 20.0f, 25.5f),
     Vector3f(25.0f, 30.0f, 25.0f)
 };
 
@@ -137,6 +138,11 @@ Game::Game()
     dirLight.worldDirection = Vector3f(10.0f, 0.0f, 5.0f);
 
     camera.setWeightColorDebug(pSkinnedMesh, pLightingTech);
+
+
+    CustomDebugDrawer* debugDrawer = new CustomDebugDrawer();
+    debugDrawer->setDebugMode(btIDebugDraw::DBG_DrawWireframe);
+    dynamicsWorld->setDebugDrawer(debugDrawer);
 }
 
 void Game::run()
@@ -165,16 +171,12 @@ void Game::initializeBulletPhysics()
     dynamicsWorld->setGravity(btVector3(0, -5, 0));
 
 
-    //btCollisionShape* groundShape = new btStaticPlaneShape(btVector3(0, 1, 0), 1);  // Ground is at y=1 with a normal vector (0, 1, 0)
-    //btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
-    //btRigidBody::btRigidBodyConstructionInfo groundRigidBodyCI(0, groundMotionState, groundShape, btVector3(0, 0, 0));
-    //btRigidBody* groundRigidBody = new btRigidBody(groundRigidBodyCI);
-    //dynamicsWorld->addRigidBody(groundRigidBody);
-
     for (int i = 0; i < numOfObjects; i++)
     {
-        m_objects.push_back(new Cube(m_positions[i], true, dynamicsWorld));
+        m_objects.push_back(new Cube(m_positions[i], true, dynamicsWorld, dirLight.getLocalDirection()));
     }
+
+    //plane = new Plane(Vector3f(25.0f, 0.0f, 25.0f), true, dynamicsWorld, 20.0f);
 }
 
 void Game::renderScene()
@@ -274,9 +276,7 @@ void Game::renderScene()
     //pSkinnedMesh->render();
 
     dynamicsWorld->stepSimulation(1.0f / 60.f, 10);
-    /*dynamicsWorld->setDebugDrawer(new btDefaultDebugDrawer());
-    dynamicsWorld->debugDrawWorld();*/
-
+    
 
     WVP = projection * view;
 
@@ -288,7 +288,10 @@ void Game::renderScene()
         m_objects[i]->update(objectWVP);  
     }
 
+    //plane->update(WVP * plane->getTransform());
+
     m_terrain.render(projection, viewNonInverse, _view, dirLight, camera.transformPos);
+    dynamicsWorld->debugDrawWorld();
 
     glutSwapBuffers();
 
@@ -309,6 +312,7 @@ void Game::keyboardListener(unsigned char key, int mouse_x, int mouse_y)
 void Game::specialKeyboardListener(int key, int mouse_x, int mouse_y)
 {
     camera.onKeyboard(key);
+
 }
 
 void Game::mouseListener(int x, int y)

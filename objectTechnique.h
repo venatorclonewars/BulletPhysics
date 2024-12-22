@@ -11,9 +11,11 @@ public:
 
 	void setWVP(const Matrix4f& WVP);
 
+	void setLightDir(const Vector3f& lightDir);
 
 private:
 	GLuint WVPLoc;
+	GLuint lightDirLoc;
 
 };
 

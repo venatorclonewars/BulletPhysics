@@ -25,6 +25,13 @@ public:
         pos = vector;
     }
 
+
+    Vert(const Vector3f& vector, const Vector3f& norm)
+    {
+        pos = vector;
+        normal = norm;
+    }
+
     Vert(float x, float y)
     {
         pos = Vector3f(x, y, 0.0f);
@@ -40,11 +47,16 @@ public:
     {
         pos = Vector3f(x, 0.0f, z);
     }
+
+    void setNormal(const Vector3f& norm)
+    {
+        normal = norm;
+    }
 };
 class Cube
 {
 public:
-	Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld);
+	Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld, const Vector3f& lightDir);
     void createRigidBody();
 
 

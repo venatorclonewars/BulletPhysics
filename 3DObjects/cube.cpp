@@ -1,25 +1,39 @@
 #include "cube.h"
 
-Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld)
+Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* dynamicsWorld, const Vector3f& lightDir)
 {
     m_technique = new ObjectTechnique();
     if (!m_technique->init())
         exit(1);
 
+    m_technique->setLightDir(lightDir);
+
     m_dynamicsWorld = dynamicsWorld;
     transform = position;
     setPosition(position);
 
-    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f)));
+    /*m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f)));
     m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f)));
     m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f)));
-    m_vertices.push_back((Vector3f(0.5f, -0.5f, -0.5f)));
-    m_vertices.push_back((Vector3f(-0.5f, -0.5f, -0.5f)));
-    m_vertices.push_back((Vector3f(0.5f, 0.5f, -0.5f)));
-    m_vertices.push_back((Vector3f(0.5f, -0.5f, 0.5f)));
-    m_vertices.push_back((Vector3f(-0.5f, -0.5f, 0.5f)));
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f)));
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, -0.5f)));
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, -0.5f)));
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f)));
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f)));*/
 
-    m_indices = {
+    // Define vertices with normals
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f), Vector3f(1.0f, 0.0f, 0.0f)));  // 0
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f), Vector3f(-1.0f, 0.0f, 0.0f))); // 1
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f), Vector3f(0.0f, 1.0f, 0.0f)));  // 2
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f), Vector3f(0.0f, -1.0f, 0.0f))); // 3
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f))); // 4
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f)));  // 5
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));   // 6
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));  // 7
+
+
+    m_indices = 
+    {
         0, 1, 2,
         1, 3, 4,
         5, 6, 3,
@@ -105,11 +119,15 @@ void Cube::createGLState()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_IBO);
 
     int POS_LOC = 0;
+    int NORM_LOC = 1;
 
     size_t numFloats = 0;
 
     glEnableVertexAttribArray(POS_LOC);
     glVertexAttribPointer(POS_LOC, 3, GL_FLOAT, GL_FALSE, sizeof(Vert), (const void*)(numFloats * sizeof(float)));
+    numFloats += 3;
+    glEnableVertexAttribArray(NORM_LOC);
+    glVertexAttribPointer(NORM_LOC, 3, GL_FLOAT, GL_FALSE, sizeof(Vert), (const void*)(numFloats * sizeof(float)));
     numFloats += 3;
 
 }

@@ -162,6 +162,7 @@ glfw3.lib;glfw3dll.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Linear
     <ClCompile Include="PhysicsEngine\plane.cpp" />
     <ClCompile Include="PhysicsEngine\physicsObject.cpp" />
     <ClCompile Include="PhysicsEngine\physicsObjectComponent.cpp" />
+    <ClCompile Include="3DObjects\plane.cpp" />
     <ClCompile Include="singleTexTerrainTechnique.cpp" />
     <ClCompile Include="skinnedMesh.cpp" />
     <ClCompile Include="technique.cpp" />
@@ -191,6 +192,7 @@ glfw3.lib;glfw3dll.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Linear
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3DObjects\cube.h" />
+    <ClInclude Include="customDebugDrawer.h" />
     <ClInclude Include="PhysicsEngine\collider.h" />
     <ClInclude Include="objectTechnique.h" />
     <ClInclude Include="PhysicsEngine\physicsEngine.h" />
@@ -222,6 +224,7 @@ glfw3.lib;glfw3dll.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Linear
     <ClInclude Include="PhysicsEngine\plane.h" />
     <ClInclude Include="PhysicsEngine\physicsObject.h" />
     <ClInclude Include="PhysicsEngine\physicsObjectComponent.h" />
+    <ClInclude Include="3DObjects\plane.h" />
     <ClInclude Include="singleTexTerrainTechnique.h" />
     <ClInclude Include="skinnedMesh.h" />
     <ClInclude Include="prerequisites.h" />
