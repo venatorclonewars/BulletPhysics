@@ -41,6 +41,7 @@ void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const Bas
 	m_worldScale = pTerrain->getWorldScale();
 	m_dynamicsWorld = dynamicsWorld;
 	m_convexShape = new btConvexHullShape();
+	m_triangleMesh = new btTriangleMesh();
 
 	m_numPatchesX = (width - 1) / (patchSize - 1);
 	m_numPatchesZ = (depth - 1) / (patchSize - 1);
@@ -51,8 +52,6 @@ void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const Bas
 	createGLState();
 
 	populateBuffers(pTerrain);
-
-	createRigidBody();
 
 	glBindVertexArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -185,13 +184,31 @@ void GeomipGrid::update(const Vector3f& cameraPos, Matrix4f& projection, Matrix4
 	render(cameraPos, projection, view, _view);
 }
 
-void GeomipGrid::createRigidBody()
+void GeomipGrid::createRigidBody(vector<Vertex>& m_vertices)
 {
+	btTriangleMesh* triangleMesh = new btTriangleMesh();
 
-	m_convexShape->optimizeConvexHull();
-	m_convexShape->initializePolyhedralFeatures();
+	for (int z = 0; z < (m_patchSize - 1) * m_numPatchesZ; z++)  
+	{
+		for (int x = 0; x < (m_patchSize - 1) * m_numPatchesX; x++)
+		{
+			unsigned int indexBottomLeft = z * m_width + x;
+			unsigned int indexTopLeft = (z + 1) * m_width + x;
+			unsigned int indexTopRight = (z + 1) * m_width + x + 1;
+			unsigned int indexBottomRight = z * m_width + x + 1;
 
-	// Create a static rigid body with mass = 0
+			btVector3 vertex0(m_vertices[indexBottomLeft].pos.x, m_vertices[indexBottomLeft].pos.y, m_vertices[indexBottomLeft].pos.z);
+			btVector3 vertex1(m_vertices[indexTopLeft].pos.x, m_vertices[indexTopLeft].pos.y, m_vertices[indexTopLeft].pos.z);
+			btVector3 vertex2(m_vertices[indexTopRight].pos.x, m_vertices[indexTopRight].pos.y, m_vertices[indexTopRight].pos.z);
+			btVector3 vertex3(m_vertices[indexBottomRight].pos.x, m_vertices[indexBottomRight].pos.y, m_vertices[indexBottomRight].pos.z);
+
+			triangleMesh->addTriangle(vertex0, vertex1, vertex2, false);
+			triangleMesh->addTriangle(vertex0, vertex2, vertex3, false);
+		}
+	}
+
+	btBvhTriangleMeshShape* meshShape = new btBvhTriangleMeshShape(triangleMesh, true);
+
 	btScalar mass = 0.0f;
 	btVector3 inertia(0, 0, 0);
 
@@ -201,15 +218,14 @@ void GeomipGrid::createRigidBody()
 
 	btDefaultMotionState* motionState = new btDefaultMotionState(startTransform);
 
-	btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, motionState, m_convexShape, inertia);
+	btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, motionState, meshShape, inertia);
 	btRigidBody* rigidBody = new btRigidBody(rbInfo);
 
-	// Mark as a static object
 	rigidBody->setCollisionFlags(rigidBody->getCollisionFlags() | btCollisionObject::CF_STATIC_OBJECT);
 
-	// Add the static collider to the world
 	m_dynamicsWorld->addRigidBody(rigidBody);
 }
+
 
 void GeomipGrid::updateRigidBody()
 {
@@ -264,6 +280,8 @@ void GeomipGrid::populateBuffers(const BaseTerrain* pTerrain)
 
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices[0]) * vertices.size(), &vertices[0], GL_STATIC_DRAW);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices[0]) * numIndices, &indices[0], GL_STATIC_DRAW);
+
+	createRigidBody(vertices);
 
 
 }

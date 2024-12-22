@@ -53,7 +53,7 @@ public:
 	void render(const Vector3f& cameraPos, Matrix4f& projection, Matrix4f& view, Matrix4f _view);
 
     void update(const Vector3f& cameraPos, Matrix4f& projection, Matrix4f& view, Matrix4f _view);
-    void createRigidBody();
+    void createRigidBody(vector<Vertex>& vertices);
     void updateRigidBody();
 
 	void createGLState();
@@ -88,6 +88,8 @@ private:
 
     btDiscreteDynamicsWorld* m_dynamicsWorld;
     btConvexHullShape* m_convexShape;
+    btTriangleMesh* m_triangleMesh;
+
 
     float m_worldScale = 1.0f;
     const BaseTerrain* m_pTerrain = NULL;
