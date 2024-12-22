@@ -30,6 +30,9 @@ class SkinnedMesh
 {
 public:
 	
+	SkinnedMesh() {}
+	~SkinnedMesh();
+
 	unsigned int getBoneID(const aiBone* pBone);
 	void loadSingleBone(int meshIndex, const aiBone* pBone);
 	void loadMeshBones(int meshIndex, const aiMesh* pMesh);

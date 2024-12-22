@@ -1,5 +1,10 @@
 #include "skinnedMesh.h"
 
+SkinnedMesh::~SkinnedMesh()
+{
+
+}
+
 unsigned int SkinnedMesh::getBoneID(const aiBone* pBone)
 {
 

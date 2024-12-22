@@ -4,11 +4,15 @@
 #include "skinnedMesh.h"
 #include <algorithm>
 
+class Game;
+
 class Camera
 {
 public:
+    Camera() {}
+    ~Camera();
 
-    Camera();
+    Camera(Game* game);
 
     void setPosition(float x, float y, float z);
     void setPosition(Vector3f& pos);
@@ -30,6 +34,8 @@ private:
     
     float m_speed = 1.0f; //2.8f;
     int m_displayBoneIndex = 0;
+
+    Game* m_game;
 public:
     float rotX = 0.0f;
     float rotY = 0.0f;

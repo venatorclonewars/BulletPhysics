@@ -8,6 +8,13 @@ GeomipGrid::GeomipGrid()
 {
 }
 
+GeomipGrid::~GeomipGrid()
+{
+	delete m_pTerrain;
+	delete m_convexShape;
+	delete m_triangleMesh;
+}
+
 void GeomipGrid::createGeomipGrid(int width, int depth, int patchSize, const BaseTerrain* pTerrain, btDiscreteDynamicsWorld* dynamicsWorld)
 {
 	if ((width - 1) % (patchSize - 1) != 0) {

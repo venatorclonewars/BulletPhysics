@@ -8,6 +8,8 @@ class Game
 {
 public:
 	Game();
+	~Game();
+
 	void run();
 	static void renderScene();
 

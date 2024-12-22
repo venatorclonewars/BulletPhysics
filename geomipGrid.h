@@ -46,6 +46,7 @@ class GeomipGrid
 {
 public:
 	GeomipGrid();
+	~GeomipGrid();
 
 	void createGeomipGrid(int width, int depth, int patchSize, const BaseTerrain* pTerrain, btDiscreteDynamicsWorld* dynamicsWorld);
 	void render();

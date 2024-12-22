@@ -75,6 +75,11 @@ void Plane::render(const Matrix4f& WVP)
     glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT, 0);
 
     glBindVertexArray(0);
+
+    glEnable(GL_CULL_FACE);
+    glFrontFace(GL_CW);
+    glCullFace(GL_BACK);
+    glEnable(GL_DEPTH_TEST);
 }
 
 void Plane::update(const Matrix4f& WVP)

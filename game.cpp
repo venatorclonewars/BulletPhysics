@@ -1,9 +1,5 @@
 #include <GL/glew.h>          // GLEW must come before OpenGL-related headers
 #include <GLFW/glfw3.h>       // GLFW headers for windowing and input
-#define BULLET_ENABLE_DEBUG_DRAW
-#include "BulletPhysics/src/LinearMath/btIDebugDraw.h"
-#include "BulletPhysics/src/btBulletDynamicsCommon.h"
-
 #include "game.h"
 #include <stdio.h>
 #include <string>
@@ -21,8 +17,6 @@
 #include "3DOBjects/plane.h"
 #include "customDebugDrawer.h"
 #include <vector>
-
-
 
 #define WINDOW_WIDTH 1920
 #define WINDOW_HEIGHT 1080
@@ -46,12 +40,12 @@ MidpointDispTerrain m_terrain;
 Camera camera;
 Time* pTime = new Time();
 
-
+btDiscreteDynamicsWorld* dynamicsWorld;
 btBroadphaseInterface* broadphase;
 btDefaultCollisionConfiguration* collisionConfiguration;
 btCollisionDispatcher* dispatcher;
 btSequentialImpulseConstraintSolver* solver;
-btDiscreteDynamicsWorld* dynamicsWorld;
+//btDiscreteDynamicsWorld* dynamicsWorld;
 btRigidBody* fallRigidBody;
 
 vector<Cube*> m_objects;
@@ -87,7 +81,7 @@ Game::Game()
         fprintf(stderr, "Error: '%s'\n", glewGetErrorString(res));
         exit(1);
     }
-
+    camera = Camera(this);
     //setGUI();
 
     pMesh = new Mesh();
@@ -144,6 +138,56 @@ Game::Game()
     debugDrawer->setDebugMode(btIDebugDraw::DBG_DrawWireframe);
     dynamicsWorld->setDebugDrawer(debugDrawer);
 }
+
+Game::~Game() {
+    // Clean up Bullet Physics components
+    if (dynamicsWorld) {
+        for (int i = dynamicsWorld->getNumCollisionObjects() - 1; i >= 0; i--) {
+            btCollisionObject* obj = dynamicsWorld->getCollisionObjectArray()[i];
+            btRigidBody* body = btRigidBody::upcast(obj);
+            if (body && body->getMotionState()) 
+            {
+                delete body->getMotionState();
+            }
+            dynamicsWorld->removeCollisionObject(obj);
+            delete obj;
+        }
+    }
+
+    delete dynamicsWorld;
+    delete solver;
+    delete dispatcher;
+    delete collisionConfiguration;
+    delete broadphase;
+
+    // Clean up game objects
+    for (Cube* object : m_objects) 
+    {
+        delete object;
+    }
+
+    m_objects.clear();
+
+    delete plane;
+
+    // Clean up other dynamically allocated objects
+    delete pTexture;
+    delete pMesh;
+    delete pSkinnedMesh;
+    delete pLightingTech;
+    delete pTerrainTech;
+    delete pTime;
+
+    // Clean up GLFW window if it exists
+    if (window) {
+        glfwDestroyWindow(window);
+        window = nullptr;
+    }
+
+    // Terminate GLFW (if this is your main context)
+    glfwTerminate();
+}
+
 
 void Game::run()
 {
@@ -235,8 +279,6 @@ void Game::renderScene()
     pLightingTech->enable();
     pLightingTech->setWVP(WVP);
     pLightingTech->setDirectionalLight(dirLight);
-
-   
 
     //pLightingTech->setMaterial(pMesh->getMaterial());
     dirLight.calcLocalDirection(world);

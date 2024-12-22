@@ -1,14 +1,23 @@
 #include "camera.h"
 #include <GL/freeglut.h>
+#include "game.h"
 #include <algorithm>
 
-Camera::Camera()
+Camera::~Camera()
+{
+    delete m_pSkinnedMesh;
+    delete m_pLightingTech;
+}
+
+Camera::Camera(Game* game)
 {
     transformPos = Vector3f(0.0f, 0.0f, 0.0f);
 
 	m_forward = Vector3f(0.0f, 0.0f, 1.0f);
 	m_up = Vector3f(0.0f, 1.0f, 0.0f);
 	m_right = Vector3f(1.0f, 0.0f, 0.0f);
+
+    m_game = game;
 }
 
 void Camera::setPosition(float x, float y, float z)
@@ -57,6 +66,10 @@ void Camera::onKeyboard(unsigned char key)
         m_displayBoneIndex = m_displayBoneIndex % m_pSkinnedMesh->getNumBones();
         m_pLightingTech->setDisplayBoneIndex(m_displayBoneIndex);
         break;
+
+    /*case 32:
+        dynamicsWorld->debugDrawWorld();
+        break;*/
     }
 }
 

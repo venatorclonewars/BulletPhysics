@@ -1,4 +1,202 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1119,5): warning MSB8027: Two or more files with the name of plane.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are PhysicsEngine\plane.cpp, 3DObjects\plane.cpp.
+  baseTerrain.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'baseTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\baseTerrain.cpp(201,33): warning C4244: 'argument': conversion from 'size_t' to 'float', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\baseTerrain.cpp(201,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  camera.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'camera.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\camera.cpp(83,84): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\camera.cpp(83,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  faultFormationTerrain.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'faultFormationTerrain.cpp')
+  
+  game.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'game.cpp')
+      C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\Include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\mesh.h(15,9): warning C4005: 'ASSIMP_LOAD_FLAGS': macro redefinition
+  (compiling source file 'game.cpp')
+      C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.h(14,9):
+      see previous definition of 'ASSIMP_LOAD_FLAGS'
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(20,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(20,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(20,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(43,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(43,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(43,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(48,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\cube.h(48,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(20,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(20,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(20,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(36,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(36,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(36,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(41,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\3DOBjects\plane.h(41,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
   geomipGrid.cpp
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'geomipGrid.cpp')
@@ -33,13 +231,147 @@ C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGri
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'geomipGrid.cpp')
   
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(373,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(394,29): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(396,30): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(400,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(437,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(438,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(439,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(440,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(441,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(380,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(401,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(403,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(407,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(444,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(445,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(446,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(447,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.cpp(448,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+  midPointDispTerrain.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'midPointDispTerrain.cpp')
+  
+  skinnedMesh.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'skinnedMesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'skinnedMesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'skinnedMesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'skinnedMesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'skinnedMesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'skinnedMesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(17,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(37,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(51,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(222,10): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'const std::string'
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(391,9): warning C4778: 'printf' : unterminated format string '%z\n'
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(391,38): warning C4474: 'printf' : too many arguments passed for format string
+      C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\skinnedMesh.cpp(391,38):
+      placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  
+  textureGenerator.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(452,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(466,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(579,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(580,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(581,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(582,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(33,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\geomipGrid.h(38,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'textureGenerator.cpp')
+  
+  Generating Code...
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(491,1): warning C4172: returning address of local variable or temporary : out
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\math.h(644,1): warning C4172: returning address of local variable or temporary : out
+Battlefr.a0426d0c\x64\Debug\plane.obj : warning LNK4042: object specified more than once; extras ignored
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\BulletPhysics\x64\Debug\BattlefrontRemake.exe

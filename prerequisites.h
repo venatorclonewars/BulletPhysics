@@ -5,9 +5,14 @@
 #include <string>
 #include <random>
 
+#define BULLET_ENABLE_DEBUG_DRAW
+#include "BulletPhysics/src/LinearMath/btIDebugDraw.h"
+#include "BulletPhysics/src/btBulletDynamicsCommon.h"
+
 using namespace std;
 
 #define ARRAY_SIZE_IN_ELEMENTS(a) (sizeof(a) / sizeof((a)[0]))
+
 
 /*struct Vertex
 {
