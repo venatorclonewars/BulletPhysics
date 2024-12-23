@@ -15,13 +15,13 @@ LightweightCube::LightweightCube(const Vector3f& position, bool isRigidBody, btD
 
     // Lightweight version - bad for lighting
     m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, 0.5f, 0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, 0.5f, -0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, 0.5f, 0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, -0.5f, -0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, -0.5f, -0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, 0.5f, -0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, -0.5f, 0.5f)));
-     m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, -0.5f, 0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, 0.5f, -0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, 0.5f, 0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, -0.5f, -0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, -0.5f, -0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, 0.5f, -0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(0.5f, -0.5f, 0.5f)));
+    m_vertices.push_back(LightweightCubeVert(Vector3f(-0.5f, -0.5f, 0.5f)));
 
 
 
@@ -40,6 +40,39 @@ LightweightCube::LightweightCube(const Vector3f& position, bool isRigidBody, btD
          2, 1, 4,
          0, 2, 7
      };
+
+     // Calculate normals for each vertex
+     for (unsigned int i = 0; i < m_indices.size(); i += 3)
+     {
+         // Retrieve the three vertices that form the current triangle
+         int index0 = m_indices[i];
+         int index1 = m_indices[i + 1];
+         int index2 = m_indices[i + 2];
+
+         // Get the vertices from m_vertices
+         Vector3f v0 = m_vertices[index0].pos;
+         Vector3f v1 = m_vertices[index1].pos;
+         Vector3f v2 = m_vertices[index2].pos;
+
+         // Calculate two edge vectors of the triangle
+         Vector3f edge1 = v1 - v0;
+         Vector3f edge2 = v2 - v0;
+
+         // Compute the normal of the triangle using the cross product
+         Vector3f normal = edge1.cross(edge2);
+         normal = normal.normalize();  // Normalize the normal
+
+         // Add the normal to the normals of each vertex of the triangle
+         m_vertices[index0].normal += normal;
+         m_vertices[index1].normal += normal;
+         m_vertices[index2].normal += normal;
+     }
+
+     // Normalize all accumulated normals
+     for (auto& vertex : m_vertices)
+     {
+         vertex.normal = vertex.normal.normalize();  // Normalize each vertex normal
+     }
 
     m_isRigidBody = isRigidBody;
 

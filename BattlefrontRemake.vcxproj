@@ -174,6 +174,8 @@ glfw3.lib;glfw3dll.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Linear
     <ClCompile Include="triangleList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="lightweightObjectShader.fs" />
+    <None Include="lightweightObjectShader.vs" />
     <None Include="Models\Doom\boblampclean.md5anim" />
     <None Include="Models\Doom\boblampclean.md5mesh" />
     <None Include="Models\Files\untitled.mtl" />

@@ -141,6 +141,8 @@
     <None Include="terrainSingleTexShader.fs" />
     <None Include="objectShader.vs" />
     <None Include="objectShader.fs" />
+    <None Include="lightweightObjectShader.vs" />
+    <None Include="lightweightObjectShader.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="math.h">

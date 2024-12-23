@@ -14,6 +14,7 @@
 #include "midPointDispTerrain.h"
 #include "textureGenerator.h"
 #include "3DOBjects/cube.h"
+#include "3DOBjects/lightweightCube.h"
 #include "3DOBjects/plane.h"
 #include "customDebugDrawer.h"
 #include <vector>
@@ -48,6 +49,7 @@ btSequentialImpulseConstraintSolver* solver;
 //btDiscreteDynamicsWorld* dynamicsWorld;
 btRigidBody* fallRigidBody;
 
+//vector<Cube*> m_objects;
 vector<Cube*> m_objects;
 Plane* plane;
 

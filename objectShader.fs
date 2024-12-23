@@ -18,7 +18,7 @@ void main()
 
 	vec3 lightDir = normalize(-gLightDir);
 
-	float diffuseFactor = max(0.0, dot(normal, lightDir));
+	float diffuseFactor = max(0.1, dot(normal, lightDir));
 
 	//FragColor = vec4(normal, 1);
 	FragColor = vec4(1, 1, 1, 1) * diffuseFactor;
