@@ -59,8 +59,8 @@ void Plane::updateRigidBody()
 
     m_rigidBody->getMotionState()->getWorldTransform(worldTransform);
 
-    m_objectTransform.setTranslation(worldTransform.getOrigin());  // Set the translation part (position)
-    m_objectTransform.setRotationFromQuaternion(worldTransform.getRotation());  // Set the rotation part from quaternion
+    m_objectTransform.setTranslation(worldTransform.getOrigin()); 
+    m_objectTransform.setQuaternion(worldTransform.getRotation()); 
 
 }
 

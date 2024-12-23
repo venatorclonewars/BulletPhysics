@@ -5,19 +5,22 @@ out vec4 FragColor;
 in vec3 fragNormal;
 
 uniform vec3 gLightDir;
+uniform mat4 gModelMatrix;
 
 void main()
 {
 	
-	vec3 normal = normalize(fragNormal);
-	float diffuseFactor;
+	 mat3 normalMatrix = transpose(inverse(mat3(gModelMatrix)));
+   
+    vec3 normal = normalMatrix * fragNormal;
 
-	if (normal != vec3(0))
-		diffuseFactor = 1;
+	normal = normalize(normal);
 
-	else
-		diffuseFactor = dot(normal, -gLightDir);
+	vec3 lightDir = normalize(-gLightDir);
 
-	FragColor = vec4(1, 1, 1, 1);// * diffuseFactor;
+	float diffuseFactor = max(0.0, dot(normal, lightDir));
+
+	//FragColor = vec4(normal, 1);
+	FragColor = vec4(1, 1, 1, 1) * diffuseFactor;
 
 }

@@ -137,6 +137,7 @@ glfw3.lib;glfw3dll.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Linear
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="3DObjects\cube.cpp" />
+    <ClCompile Include="3DObjects\lightweightCube.cpp" />
     <ClCompile Include="PhysicsEngine\collider.cpp" />
     <ClCompile Include="objectTechnique.cpp" />
     <ClCompile Include="PhysicsEngine\physicsEngine.cpp" />
@@ -193,6 +194,7 @@ glfw3.lib;glfw3dll.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Linear
   <ItemGroup>
     <ClInclude Include="3DObjects\cube.h" />
     <ClInclude Include="customDebugDrawer.h" />
+    <ClInclude Include="3DObjects\lightweightCube.h" />
     <ClInclude Include="PhysicsEngine\collider.h" />
     <ClInclude Include="objectTechnique.h" />
     <ClInclude Include="PhysicsEngine\physicsEngine.h" />

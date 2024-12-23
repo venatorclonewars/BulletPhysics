@@ -7,12 +7,14 @@ Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* 
         exit(1);
 
     m_technique->setLightDir(lightDir);
+    m_lightDir = lightDir;
 
     m_dynamicsWorld = dynamicsWorld;
     transform = position;
     setPosition(position);
 
-    /*m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f)));
+   // Lightweight version - bad for lighting
+   /* m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f)));
     m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f)));
     m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f)));
     m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f)));
@@ -21,18 +23,9 @@ Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* 
     m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f)));
     m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f)));*/
 
-    // Define vertices with normals
-    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f), Vector3f(1.0f, 0.0f, 0.0f)));  // 0
-    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f), Vector3f(-1.0f, 0.0f, 0.0f))); // 1
-    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f), Vector3f(0.0f, 1.0f, 0.0f)));  // 2
-    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f), Vector3f(0.0f, -1.0f, 0.0f))); // 3
-    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f))); // 4
-    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f)));  // 5
-    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));   // 6
-    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));  // 7
 
 
-    m_indices = 
+    /*m_indices = 
     {
         0, 1, 2,
         1, 3, 4,
@@ -46,7 +39,49 @@ Cube::Cube(const Vector3f& position, bool isRigidBody, btDiscreteDynamicsWorld* 
         7, 4, 3,
         2, 1, 4,
         0, 2, 7
+    };*/
+
+    // Define vertices with positions and normals
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f), Vector3f(1.0f, 0.0f, 0.0f)));  // Right face
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, -0.5f), Vector3f(1.0f, 0.0f, 0.0f))); // Right face
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f), Vector3f(1.0f, 0.0f, 0.0f))); // Right face
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f), Vector3f(1.0f, 0.0f, 0.0f)));  // Right face
+
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f), Vector3f(-1.0f, 0.0f, 0.0f))); // Left face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f), Vector3f(-1.0f, 0.0f, 0.0f))); // Left face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, -0.5f), Vector3f(-1.0f, 0.0f, 0.0f))); // Left face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f), Vector3f(-1.0f, 0.0f, 0.0f))); // Left face
+
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f), Vector3f(0.0f, 1.0f, 0.0f)));  // Top face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f), Vector3f(0.0f, 1.0f, 0.0f))); // Top face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f), Vector3f(0.0f, 1.0f, 0.0f))); // Top face
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, -0.5f), Vector3f(0.0f, 1.0f, 0.0f)));  // Top face
+
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f), Vector3f(0.0f, -1.0f, 0.0f))); // Bottom face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f), Vector3f(0.0f, -1.0f, 0.0f))); // Bottom face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, -0.5f), Vector3f(0.0f, -1.0f, 0.0f))); // Bottom face
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f), Vector3f(0.0f, -1.0f, 0.0f))); // Bottom face
+
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f))); // Front face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f))); // Front face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f))); // Front face
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, -0.5f), Vector3f(0.0f, 0.0f, -1.0f)));  // Front face
+
+    m_vertices.push_back(Vert(Vector3f(0.5f, -0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));  // Back face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, -0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f))); // Back face
+    m_vertices.push_back(Vert(Vector3f(-0.5f, 0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));  // Back face
+    m_vertices.push_back(Vert(Vector3f(0.5f, 0.5f, 0.5f), Vector3f(0.0f, 0.0f, 1.0f)));   // Back face
+
+    m_indices =
+    {
+         0, 1, 2, 2, 3, 0,   // Right face
+        4, 5, 6, 6, 7, 4,   // Left face
+        8, 9, 10, 10, 11, 8, // Top face
+        12, 13, 14, 14, 15, 12, // Bottom face
+        16, 17, 18, 18, 19, 16, // Front face
+        20, 21, 22, 22, 23, 20  // Back face
     };
+
 
     m_isRigidBody = isRigidBody;
 
@@ -82,29 +117,35 @@ void Cube::updateRigidBody()
 
     m_rigidBody->getMotionState()->getWorldTransform(worldTransform);
 
-    m_objectTransform.setTranslation(worldTransform.getOrigin());  // Set the translation part (position)
-    m_objectTransform.setRotationFromQuaternion(worldTransform.getRotation());  // Set the rotation part from quaternion
+    m_objectTransform.setTranslation(worldTransform.getOrigin());
+    m_objectTransform.setQuaternion(worldTransform.getRotation());
 
 }
 
-void Cube::render(const Matrix4f& WVP)
+void Cube::render(const Matrix4f& WVP, const Matrix4f& modelMatrix)
 {
     glBindVertexArray(m_VAO);
+    //IF using lightweight remove this
+    glDisable(GL_CULL_FACE);
 
     m_technique->enable();
     m_technique->setWVP(WVP);
+    m_technique->setLightDir(m_lightDir);
+    m_technique->setModelMatrix(modelMatrix);
 
     glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT, 0);
+
+    glEnable(GL_CULL_FACE);
 
     glBindVertexArray(0);
 }
 
-void Cube::update(const Matrix4f& WVP)
+void Cube::update(const Matrix4f& WVP, const Matrix4f& modelMatrix)
 {
     if (m_isRigidBody)
         updateRigidBody();
 
-    render(WVP);
+    render(WVP, modelMatrix);
 }
 
 void Cube::createGLState()

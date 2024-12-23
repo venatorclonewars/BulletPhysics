@@ -9,8 +9,8 @@ struct Vert
 {
 public:
     Vector3f pos;
-    Vector2f tex;
     Vector3f normal = Vector3f(0.0f, 0.0f, 0.0f);
+    Vector2f tex;
 
 public:
     Vert() {}
@@ -61,8 +61,8 @@ public:
 
 
     void updateRigidBody();
-	void render(const Matrix4f& WVP);
-	void update(const Matrix4f& WVP);
+	void render(const Matrix4f& WVP, const Matrix4f& modelMatrix);
+	void update(const Matrix4f& WVP, const Matrix4f& modelMatrix);
 
 	void createGLState();
 	void populateBuffers();
@@ -76,6 +76,8 @@ public:
 private:
     vector<Vert> m_vertices;
     vector<int> m_indices;
+
+    Vector3f m_lightDir;
 
     GLuint m_VAO;
     GLuint m_VBO;

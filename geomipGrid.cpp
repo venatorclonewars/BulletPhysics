@@ -209,8 +209,8 @@ void GeomipGrid::createRigidBody(vector<Vertex>& m_vertices)
 			btVector3 vertex2(m_vertices[indexTopRight].pos.x, m_vertices[indexTopRight].pos.y, m_vertices[indexTopRight].pos.z);
 			btVector3 vertex3(m_vertices[indexBottomRight].pos.x, m_vertices[indexBottomRight].pos.y, m_vertices[indexBottomRight].pos.z);
 
-			triangleMesh->addTriangle(vertex0, vertex1, vertex2, false);
-			triangleMesh->addTriangle(vertex0, vertex2, vertex3, false);
+			triangleMesh->addTriangle(vertex0, vertex1, vertex2, true);
+			triangleMesh->addTriangle(vertex0, vertex2, vertex3, true);
 		}
 	}
 

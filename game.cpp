@@ -217,7 +217,7 @@ void Game::initializeBulletPhysics()
 
     for (int i = 0; i < numOfObjects; i++)
     {
-        m_objects.push_back(new Cube(m_positions[i], true, dynamicsWorld, dirLight.getLocalDirection()));
+        m_objects.push_back(new Cube(m_positions[i], true, dynamicsWorld, Vector3f(10.0f, 5.0f, 5.0f)));
     }
 
     //plane = new Plane(Vector3f(25.0f, 0.0f, 25.0f), true, dynamicsWorld, 20.0f);
@@ -327,13 +327,13 @@ void Game::renderScene()
     for (int i = 0; i < numOfObjects; i++)
     {    
         objectWVP = WVP * m_objects[i]->getTransform();
-        m_objects[i]->update(objectWVP);  
+        m_objects[i]->update(objectWVP, m_objects[i]->getTransform());
     }
 
     //plane->update(WVP * plane->getTransform());
 
     m_terrain.render(projection, viewNonInverse, _view, dirLight, camera.transformPos);
-    dynamicsWorld->debugDrawWorld();
+    //dynamicsWorld->debugDrawWorld();
 
     glutSwapBuffers();
 
@@ -373,7 +373,7 @@ void Game::glutCallbacks()
 
 void Game::initTerrainTextureGenerator()
 {
-    float worldScale = 3.0f;
+    float worldScale = 2.0f;
     float textureScale = 1.0f;
 
     m_terrain.initTerrain(worldScale, textureScale);

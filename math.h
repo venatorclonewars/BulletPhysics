@@ -335,7 +335,7 @@ public:
 		
 	}
 
-	void setRotationFromQuaternion(const btQuaternion& quat)
+	void setQuaternion(const btQuaternion& quat)
 	{
 		
 		btMatrix3x3 rotMatrix = btMatrix3x3(quat);
@@ -354,8 +354,6 @@ public:
 		mat[2][2] = rotMatrix[2][2];
 
 		mat[3][3] = 1.0f; // Homogeneous coordinate
-
-		// The translation part (position) will be set separately.
 	}
 
 	void setTranslation(const btVector3& position)

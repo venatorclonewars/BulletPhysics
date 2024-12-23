@@ -120,6 +120,9 @@
     <ClCompile Include="3DObjects\plane.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3DObjects\lightweightCube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="x64\Debug\freeglutd.dll" />
@@ -282,6 +285,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="3DObjects\plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3DObjects\lightweightCube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

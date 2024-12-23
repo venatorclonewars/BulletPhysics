@@ -11,6 +11,7 @@ void main()
 {
 	
 	gl_Position = gWVP * vec4(vertPos, 1.0);
-	
+
 	fragNormal = normal;
+
 }

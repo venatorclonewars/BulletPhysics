@@ -3,16 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\lightweightCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\lightweightCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\lightweightCube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\lightweightCube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\plane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\plane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\geomipGrid.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:geomipGrid.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:objectShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectShader.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:objectShader.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectTechnique.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:objectTechnique.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectTechnique.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:objectTechnique.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:shader.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\baseTerrain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:baseTerrain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\textureGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:textureGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\skinnedMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:skinnedMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\skinnedMesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:terrainTehnique.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\textureGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:textureGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -35,16 +91,8 @@
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:midPointDispTerrain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\geomipGrid.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:geomipGrid.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\geomipGrid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:geomipGrid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\baseTerrain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:baseTerrain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\plane.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -59,32 +107,12 @@
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\plane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\plane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\prerequisites.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:prerequisites.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\terrainSingleTexShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:terrainSingleTexShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:3DObjects\\cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 26,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,7 +130,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "lightweightCube.cpp",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\lightweightCube.cpp",
+              "RelativeDocumentMoniker": "3DObjects\\lightweightCube.cpp",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\lightweightCube.cpp",
+              "RelativeToolTip": "3DObjects\\lightweightCube.cpp",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAnwFYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-23T16:41:40.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lightweightCube.h",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\lightweightCube.h",
+              "RelativeDocumentMoniker": "3DObjects\\lightweightCube.h",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\lightweightCube.h",
+              "RelativeToolTip": "3DObjects\\lightweightCube.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-23T16:39:48.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "objectTechnique.cpp",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectTechnique.cpp",
+              "RelativeDocumentMoniker": "objectTechnique.cpp",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectTechnique.cpp",
+              "RelativeToolTip": "objectTechnique.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-23T14:59:28.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "objectTechnique.h",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectTechnique.h",
+              "RelativeDocumentMoniker": "objectTechnique.h",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectTechnique.h",
+              "RelativeToolTip": "objectTechnique.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-23T14:59:07.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "shader.vs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.vs",
+              "RelativeDocumentMoniker": "shader.vs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.vs",
+              "RelativeToolTip": "shader.vs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-23T14:34:40.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "objectShader.vs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectShader.vs",
+              "RelativeDocumentMoniker": "objectShader.vs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectShader.vs",
+              "RelativeToolTip": "objectShader.vs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-23T14:34:12.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "objectShader.fs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectShader.fs",
+              "RelativeDocumentMoniker": "objectShader.fs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\objectShader.fs",
+              "RelativeToolTip": "objectShader.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-23T13:52:56.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "skinnedMesh.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\skinnedMesh.h",
               "RelativeDocumentMoniker": "skinnedMesh.h",
@@ -110,12 +229,11 @@
               "RelativeToolTip": "skinnedMesh.h",
               "ViewState": "AgIAAHoAAAAAAAAAAAAMwCEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T17:58:07.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:58:07.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "terrainTehnique.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\terrainTehnique.h",
               "RelativeDocumentMoniker": "terrainTehnique.h",
@@ -123,25 +241,24 @@
               "RelativeToolTip": "terrainTehnique.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T17:57:55.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:57:55.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "textureGenerator.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\textureGenerator.h",
               "RelativeDocumentMoniker": "textureGenerator.h",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\textureGenerator.h",
               "RelativeToolTip": "textureGenerator.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-22T17:57:40.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "texture.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\texture.h",
               "RelativeDocumentMoniker": "texture.h",
@@ -149,12 +266,11 @@
               "RelativeToolTip": "texture.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T17:57:14.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:57:14.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "midPointDispTerrain.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\midPointDispTerrain.h",
               "RelativeDocumentMoniker": "midPointDispTerrain.h",
@@ -162,25 +278,24 @@
               "RelativeToolTip": "midPointDispTerrain.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T17:56:58.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:56:58.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "plane.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\plane.cpp",
               "RelativeDocumentMoniker": "3DObjects\\plane.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\plane.cpp",
               "RelativeToolTip": "3DObjects\\plane.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAMwE8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAnwE4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-22T17:40:37.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "prerequisites.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\prerequisites.h",
               "RelativeDocumentMoniker": "prerequisites.h",
@@ -188,25 +303,24 @@
               "RelativeToolTip": "prerequisites.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T17:34:00.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:34:00.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "game.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\game.cpp",
               "RelativeDocumentMoniker": "game.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\game.cpp",
               "RelativeToolTip": "game.cpp",
-              "ViewState": "AgIAADABAAAAAAAAAAAMwD0BAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAnwE0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-20T16:06:05.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "camera.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\camera.h",
               "RelativeDocumentMoniker": "camera.h",
@@ -214,12 +328,11 @@
               "RelativeToolTip": "camera.h",
               "ViewState": "AgIAABMAAAAAAAAAAAAMwB8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T17:23:54.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:23:54.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "camera.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\camera.cpp",
               "RelativeDocumentMoniker": "camera.cpp",
@@ -227,12 +340,11 @@
               "RelativeToolTip": "camera.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-22T13:06:38.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T13:06:38.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "terrainSingleTexShader.fs",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\terrainSingleTexShader.fs",
               "RelativeDocumentMoniker": "terrainSingleTexShader.fs",
@@ -244,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "skinnedMesh.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\skinnedMesh.cpp",
               "RelativeDocumentMoniker": "skinnedMesh.cpp",
@@ -257,19 +369,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 14,
               "Title": "shader.fs",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.fs",
               "RelativeDocumentMoniker": "shader.fs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\shader.fs",
               "RelativeToolTip": "shader.fs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-22T12:35:37.932Z"
+              "WhenOpened": "2024-12-22T12:35:37.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "plane.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\plane.h",
               "RelativeDocumentMoniker": "3DObjects\\plane.h",
@@ -277,12 +390,11 @@
               "RelativeToolTip": "3DObjects\\plane.h",
               "ViewState": "AgIAADAAAAAAAAAAAAAMwDcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T10:54:52.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T10:54:52.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "baseTerrain.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\baseTerrain.cpp",
               "RelativeDocumentMoniker": "baseTerrain.cpp",
@@ -295,20 +407,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "geomipGrid.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\geomipGrid.cpp",
               "RelativeDocumentMoniker": "geomipGrid.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\geomipGrid.cpp",
               "RelativeToolTip": "geomipGrid.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAnwJQBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-21T13:10:37.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "geomipGrid.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\geomipGrid.h",
               "RelativeDocumentMoniker": "geomipGrid.h",
@@ -316,48 +428,50 @@
               "RelativeToolTip": "geomipGrid.h",
               "ViewState": "AgIAAE8AAAAAAAAAAAAMwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T13:10:36.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T13:10:36.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "cube.h",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.h",
-              "RelativeDocumentMoniker": "3DObjects\\cube.h",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.h",
-              "RelativeToolTip": "3DObjects\\cube.h",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwB8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T10:56:03.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "math.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\math.h",
               "RelativeDocumentMoniker": "math.h",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\math.h",
               "RelativeToolTip": "math.h",
-              "ViewState": "AgIAAEoCAAAAAAAAAAAuwFMCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAnwFwBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-20T17:18:49.688Z"
+              "WhenOpened": "2024-12-20T17:18:49.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "cube.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.cpp",
               "RelativeDocumentMoniker": "3DObjects\\cube.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.cpp",
               "RelativeToolTip": "3DObjects\\cube.cpp",
-              "ViewState": "AgIAABYAAAAAAAAAAAAMwCIAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAnwIkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-20T17:08:48.228Z"
+              "WhenOpened": "2024-12-20T17:08:48.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "cube.h",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.h",
+              "RelativeDocumentMoniker": "3DObjects\\cube.h",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\3DObjects\\cube.h",
+              "RelativeToolTip": "3DObjects\\cube.h",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAYwEwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-21T10:56:03.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "game.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\BulletPhysics\\game.h",
               "RelativeDocumentMoniker": "game.h",
@@ -365,8 +479,7 @@
               "RelativeToolTip": "game.h",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-20T16:06:04.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T16:06:04.764Z"
             }
           ]
         },
